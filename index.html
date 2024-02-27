@@ -3,54 +3,210 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyek1 STr HTML 27 02 2024</title>
+    <title>Proyek1 Jelang 1B</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/57da366b36.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Srisakdi&display=swap" rel="stylesheet">
 
 </head>
-
 <body>
-    <header>
-
-        <nav>
-            <div class="logo">
-                <h4>Rizqi Proyek 1</h4>
+    <div id="header">
+        <div class="container">
+            <nav> 
+                <img src="./img/nav.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">Profil diri</a></li>
+                    <li><a href="#services">Kemampuan Teknis</a></li>
+                    <li><a href="#portofolio">Galeri</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, Im <span> Jelang </span></h1>
+                    <h2>Welcome To My <span>Portofolio</span></h2>
             </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Subjects</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Assignment</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <input type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>   
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-    <main>
-        <div class="box flextwo">
-            <article>
-                <h2>Tentang Web</h2>
-                <p>Web Ini dibuat untuk memenuhi tugas Proyek 1. Beberapa sumber yang dipakai dalam pengerjaan tugas ini selain dari lms  adalah dari ... Terima Kasih</p>
-            </article>
         </div>
-        <aside class="box flexone">
-            <img src="img/RIZQI.png" class="image"/>
-            <h5>Muhammad Rizqi Sholahuddin</h5>
-        </aside>
-    </main>
-    <footer class="box">
-        Rizqi, Di depan Laptop 27 Februari 2024
-    </footer>
+    </div>
+    <!-- ----------------About------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./img/hihihiha.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Saya Jelang, seorang siswa di Politeknik Negeri Bandung, 
+                    dengan spesialisasi dalam pengembangan backend dan mobile. Dengan pengalaman belajar selama 2
+                     tahun di bidang ini, saya telah mengembangkan keahlian dalam pembuatan Restfull API dan Mobile 
+                     Application, Saya berkomitmen untuk terus memperluas pengetahuan dan keterampilan saya dalam 
+                     mengembangkan solusi teknologi yang inovatif dan efisien di kedua bidang tersebut.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skill')">Hobby dan Motto Hidup</p>
+                        <p class="tab-links" onclick="opentab('experience')">Lesson Learned</p>
+                        <p class="tab-links" onclick="opentab('education')">Harapan Setelah Lulus</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skill">
+                        <ul>
+                            <li><span>Hobby</span><br>Membaca Novel </li>
+                            <li><span>Motto Hidup</span><br>Berusaha Melakukan Yang Terbaik Dan Selalu Menjadi Bermanfaat Bagi Orang Lain</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                           <li><span>Lesson Learn</span><br>Saya mempelajari banyak hal dimulai dari lebih mendalami tentang github dengan mendapat pemahaman operasi pada github dengan CLI</li>
+                            <li>Menggunakan github fork juga mengasah kemampuan kecepatan dalam melakukan pekerjaan</li>
+                            <li>Mengasah kemampuan mengetik dan yang pasti mengasah kemampuan membuat website menggunakan html dan css</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Harapan Setelah Lulus</span><br>lanjutkan karier saya dalam bidang yang saya minati dan saya sudah mempersiapkan diri dengan baik selama kuliah.</li>
+                            <li>Saya berharap untuk mendapatkan pekerjaan yang memungkinkan saya untuk terus belajar dan berkembang, serta memberikan kontribusi yang signifikan dalam lingkungan kerja saya.</li>
+                            <li>Selain itu, saya juga berharap dapat menciptakan dampak positif dalam masyarakat melalui pekerjaan saya, baik itu melalui inovasi, pemberdayaan, atau berbagai bentuk kegiatan sosial.</li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="text-center">
+                <iframe width="1100" height="800" src="https://www.youtube.com/embed/QnMfw52m-7k?si=RZuAMAzwMPpuSo4K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            
+        </div>
     </div>
 </div>
-    <script src="js/main.js"></script>
+
+<!-- ----------------skill---------------------->
+<div id="services">
+    <div class="services">
+        <div class="container">
+            <h1 class="sub-title">Kemampuan Teknis</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h2>Mobile Dev</h2>
+                    <p>saya memiliki kemampuan dalam pengembangan aplikasi berbasis mobile dengan pengalaman pernah berpartisipasi dalam pembuatan aplikasi e-commerce
+                        mengenbangkan aplikasi absensi dan penilaian siswa dengan teknologi framework flutter, dan pernah mengikuti ajang perlombaan kompetensi siswa
+                        dalam pengembangan aplikasi Android menggunakan framework android native dengan bahasa java
+                    </p>
+                        <!-- <a href="#">learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-desktop"></i>
+                    <h2>Desktop Dev</h2>
+                    <p>saya memiliki kemampuan dalam pengembangan aplikasi berbasis desktop dengan pengalaman 
+                        pembuatan aplikasi pembayaran PLN, aplikasi management Restaurant, dan applikasi 
+                        management pembayaran SPP dengan penggunaan Teknologi C#.Net Desktop dan java Swing UI
+                    </p>
+                        <!-- <a href="#">learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Backend</h2>
+                    <p>Saya juga memiliki kemampuan dalam pengembangan RestFull API dengan pengalaman membuat 
+                        API pembayaran Cashier dengan Technology framework ASP.Net, API management Pegawai dan
+                        clone website API reqresAPI
+                    </p>
+                        <!-- <a href="#">learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------------portofolio-------------------->
+<div id="portofolio">
+    <div class="container">
+        <h1 class="sub-title">Galery</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./img/acara1.png">
+                <div class="layer">
+                    <h3>Praktek Kerja Industi</h3>
+                    <p>Melaksanakan praktek kerja industri di DKM Pusdai Jabar untuk melakukan pengembangan website dan pengembangan Aplikasi Zakat.</p>
+                    <!-- <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> -->
+                </div>
+            </div>
+            <div class="work">
+                <img src="./img/acara2.png">
+                <div class="layer">
+                    <h3>1000 StartUp Digital</h3>
+                    <p>Berpartisipasi dalam panitia sebagai supporting dalam acara Hack4ID 1000 StartUp Digital.</p>
+                    <!-- <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> -->
+                </div>
+            </div>
+            <div class="work">
+                <img src="./img/acara3.png">
+                <div class="layer">
+                    <h3>Ramadhan Bootcamp</h3>
+                    <p>Pernah Mengikuti bootcamp untuk pengembangan skill teknis pemrograman dan penguatan iman ke-islaman.</p>
+                    <!-- <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> -->
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- -------------------------contact------------------------------------ -->
+<div id="contact">
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>raharjojelang@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 085781287250</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/jelang.r.5"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/JelangA"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/jelang_anugrah_raharjo/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/jelang-anugrah-785303258/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="text-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.1535158273596!2d107.57119757403487!3d-6.872202067238102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e420abc30acf%3A0x10569255865460a5!2sPoliteknik%20Negeri%20Bandung!5e0!3m2!1sid!2sid!4v1709047123159!5m2!1sid!2sid" width="1100" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    
+        </div>
+        <div class="copyright">
+            <p>copyright <i class="fa-solid fa-heart"></i> Jelang Anugrah Raharjo all rights reserved</p>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
 </body>
 
 </html>
