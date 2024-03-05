@@ -12,30 +12,32 @@
 
 </head>
 <body>
-    <div id="header">
+    <header id="header">
         <div class="container">
             <nav> 
-                <img src="./img/nav.png" class="logo">
-                <ul>
+                <img src="./img/nav.png" class="logo" alt="Logo">
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">Profil diri</a></li>
                     <li><a href="#services">Kemampuan Teknis</a></li>
                     <li><a href="#portofolio">Galeri</a></li>
                     <li><a href="#contact">Kontak</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <h1>Hi, Im <span> Jelang </span></h1>
-                    <h2>Welcome To My <span>Portofolio</span></h2>
+                <h1>Hi, I'm <span>Jelang</span></h1>
+                <h2>Welcome To My <span>Portfolio</span></h2>
             </div>
         </div>
-    </div>
+    </header>
     <!-- ----------------About------------------->
 <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="./img/hihihiha.jpg">
+                <img src="./img/hihihiha.jpg" alt="Profile Picture">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
@@ -71,8 +73,8 @@
                         </ul>
                     </div>
             </div>
-            <div class="text-center">
-                <iframe width="1100" height="800" src="https://www.youtube.com/embed/QnMfw52m-7k?si=RZuAMAzwMPpuSo4K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/QnMfw52m-7k?si=RZuAMAzwMPpuSo4K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             
         </div>
@@ -80,91 +82,75 @@
 </div>
 
 <!-- ----------------skill---------------------->
-<div id="services">
+<section id="services">
     <div class="services">
         <div class="container">
             <h1 class="sub-title">Kemampuan Teknis</h1>
             <div class="services-list">
                 <div>
-                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <i class="fas fa-mobile-alt"></i>
                     <h2>Mobile Dev</h2>
-                    <p>saya memiliki kemampuan dalam pengembangan aplikasi berbasis mobile dengan pengalaman pernah berpartisipasi dalam pembuatan aplikasi e-commerce
-                        mengenbangkan aplikasi absensi dan penilaian siswa dengan teknologi framework flutter, dan pernah mengikuti ajang perlombaan kompetensi siswa
-                        dalam pengembangan aplikasi Android menggunakan framework android native dengan bahasa java
-                    </p>
-                        <!-- <a href="#">learn more</a> -->
+                    <p>Saya memiliki kemampuan dalam pengembangan aplikasi berbasis mobile dengan pengalaman pernah berpartisipasi dalam pembuatan aplikasi e-commerce, mengembangkan aplikasi absensi dan penilaian siswa dengan teknologi framework Flutter, dan pernah mengikuti ajang perlombaan kompetensi siswa dalam pengembangan aplikasi Android menggunakan framework Android native dengan bahasa Java.</p>
                 </div>
                 <div>
-                    <i class="fa-solid fa-desktop"></i>
+                    <i class="fas fa-desktop"></i>
                     <h2>Desktop Dev</h2>
-                    <p>saya memiliki kemampuan dalam pengembangan aplikasi berbasis desktop dengan pengalaman 
-                        pembuatan aplikasi pembayaran PLN, aplikasi management Restaurant, dan applikasi 
-                        management pembayaran SPP dengan penggunaan Teknologi C#.Net Desktop dan java Swing UI
-                    </p>
-                        <!-- <a href="#">learn more</a> -->
+                    <p>Saya memiliki kemampuan dalam pengembangan aplikasi berbasis desktop dengan pengalaman pembuatan aplikasi pembayaran PLN, aplikasi management Restaurant, dan aplikasi management pembayaran SPP dengan penggunaan Teknologi C#.Net Desktop dan Java Swing UI.</p>
                 </div>
                 <div>
-                    <i class="fa-solid fa-code"></i>
+                    <i class="fas fa-code"></i>
                     <h2>Backend</h2>
-                    <p>Saya juga memiliki kemampuan dalam pengembangan RestFull API dengan pengalaman membuat 
-                        API pembayaran Cashier dengan Technology framework ASP.Net, API management Pegawai dan
-                        clone website API reqresAPI
-                    </p>
-                        <!-- <a href="#">learn more</a> -->
+                    <p>Saya juga memiliki kemampuan dalam pengembangan Restful API dengan pengalaman membuat API pembayaran Cashier dengan Technology framework ASP.Net, API management Pegawai dan clone website API reqresAPI.</p>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 <!-- ----------------portofolio-------------------->
-<div id="portofolio">
+<section id="portofolio">
     <div class="container">
-        <h1 class="sub-title">Galery</h1>
+        <h1 class="sub-title">Galeri</h1>
         <div class="work-list">
             <div class="work">
-                <img src="./img/kegiatan1.jpg">
+                <img src="./img/kegiatan1.jpg" alt="Work 1">
                 <div class="layer">
                     <h3>Praktek Kerja Industi</h3>
                     <p>Melaksanakan praktek kerja industri di DKM Pusdai Jabar untuk melakukan pengembangan website dan pengembangan Aplikasi Zakat.</p>
-                    <!-- <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> -->
                 </div>
             </div>
             <div class="work">
-                <img src="./img/kegiatan2.jpg">
+                <img src="./img/kegiatan2.jpg" alt="Work 2">
                 <div class="layer">
                     <h3>1000 StartUp Digital</h3>
                     <p>Berpartisipasi dalam panitia sebagai supporting dalam acara Hack4ID 1000 StartUp Digital.</p>
-                    <!-- <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> -->
                 </div>
             </div>
             <div class="work">
-                <img src="./img/kegiatan3.jpg">
+                <img src="./img/kegiatan3.jpg" alt="Work 3">
                 <div class="layer">
                     <h3>Ramadhan Bootcamp</h3>
-                    <p>Pernah Mengikuti bootcamp untuk pengembangan skill teknis pemrograman dan penguatan iman ke-islaman.</p>
-                    <!-- <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> -->
+                    <p>Pernah Mengikuti bootcamp untuk pengembangan skill teknis pemrograman dan penguatan iman ke-Islaman.</p>
                 </div>
             </div>
         </div>
         <a href="#" class="btn">See more</a>
     </div>
-</div>
+</section>
 
 <!-- -------------------------contact------------------------------------ -->
-<div id="contact">
+<section id="contact">
     <div class="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-regular fa-paper-plane"></i>raharjojelang@gmail.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i> 085781287250</p>
+                    <p><i class="far fa-paper-plane"></i> raharjojelang@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 085781287250</p>
                     <div class="social-icons">
-                        <a href="https://www.facebook.com/jelang.r.5"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://github.com/JelangA"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.instagram.com/jelang_anugrah_raharjo/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/jelang-anugrah-785303258/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/jelang.r.5"><i class="fab fa-facebook"></i></a>
+                        <a href="https://github.com/JelangA"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/jelang_anugrah_raharjo/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/jelang-anugrah-785303258/"><i class="fab fa-linkedin"></i></a>
                     </div>
                     <a href="./img//Jelang's Resume (4).pdf" download class="btn btn2">Download CV</a>
                 </div>
@@ -173,40 +159,33 @@
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">submit</button>
+                        <button type="submit" class="btn btn2">Submit</button>
                     </form>
                 </div>
             </div>
         </div>
         <div class="container">
-            <div class="text-center">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.1535158273596!2d107.57119757403487!3d-6.872202067238102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e420abc30acf%3A0x10569255865460a5!2sPoliteknik%20Negeri%20Bandung!5e0!3m2!1sid!2sid!4v1709047123159!5m2!1sid!2sid" width="1100" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.1535158273596!2d107.57119757403487!3d-6.872202067238102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e420abc30acf%3A0x10569255865460a5!2sPoliteknik%20Negeri%20Bandung!5e0!3m2!1sid!2sid!4v1709047123159!5m2!1sid!2sid" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-    
-        </div>
-        <div class="copyright">
-            <p>copyright <i class="fa-solid fa-heart"></i> Jelang Anugrah Raharjo all rights reserved</p>
         </div>
     </div>
+    
+</section>
+<div class="copyright">
+    <p>Copyright <i class="fas fa-heart"></i> Jelang Anugrah Raharjo all rights reserved</p>
 </div>
+<script src="./js/main.js"></script>
 
 <script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
+    var sidemenus = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenus.style.right = "0";
+    }
+    function closemenu(){
+        sidemenus.style.right = "-200px";
     }
 
 </script>
 </body>
-
 </html>
