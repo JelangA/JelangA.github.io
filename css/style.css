@@ -370,12 +370,12 @@ nav .fas{
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 750px) {
     #header{
-      background-image: url(../img/phone-background.png);
+      background-image: url(../img/aduh.jpg);
     }
     .header-text{
-      margin-top: 120%;
+      margin-top: 90%;
       font-size: 16px;
     }
     .header-text h1{
@@ -389,7 +389,7 @@ nav .fas{
       background: #ff004f;
       position: fixed;
       top: 0;
-      right: 0;
+      right: -200px;
       width: 200px;
       height: 100vh;
       padding-top: 50px;
@@ -405,6 +405,9 @@ nav .fas{
       top: 25px;
       left: 25px;
       cursor: pointer;
+    }
+    .contact-right{
+      flex-basis: 0%;
     }
     .sub-title{
       font-size: 40px;
